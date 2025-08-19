@@ -6,7 +6,7 @@ import { VisAxis, VisLine, VisXYContainer } from "@unovis/vue"
 import { useMounted } from "@vueuse/core"
 import { type Component, computed, ref } from "vue"
 import { cn } from "@/lib/utils"
-import { ChartCrosshair, ChartLegend, defaultColors } from '@/app/components/ui/chart'
+import { ChartCrosshair, ChartLegend, defaultColors } from '@/components/ui/chart'
 
 const props = withDefaults(defineProps<BaseChartProps<T> & {
   /**

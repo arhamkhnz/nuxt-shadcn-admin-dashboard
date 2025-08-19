@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends z.ZodAny">
 import type { Config, ConfigItem } from './interface'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/app/components/ui/accordion'
-import { Button } from '@/app/components/ui/button'
-import { FormItem, FormMessage } from '@/app/components/ui/form'
-import { Separator } from '@/app/components/ui/separator'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import { Button } from '@/components/ui/button'
+import { FormItem, FormMessage } from '@/components/ui/form'
+import { Separator } from '@/components/ui/separator'
 import { PlusIcon, TrashIcon } from 'lucide-vue-next'
 import { FieldArray, FieldContextKey, useField } from 'vee-validate'
 import { computed, provide } from 'vue'

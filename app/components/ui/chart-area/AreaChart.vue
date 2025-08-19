@@ -7,7 +7,7 @@ import { useMounted } from "@vueuse/core"
 import { useId } from "reka-ui"
 import { type Component, computed, ref } from "vue"
 import { cn } from "@/lib/utils"
-import { ChartCrosshair, ChartLegend, defaultColors } from '@/app/components/ui/chart'
+import { ChartCrosshair, ChartLegend, defaultColors } from '@/components/ui/chart'
 
 const props = withDefaults(defineProps<BaseChartProps<T> & {
   /**
