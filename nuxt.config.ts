@@ -20,4 +20,8 @@ export default defineNuxtConfig({
      */
     componentDir: "./components/ui",
   },
+  routeRules: {
+    "/": { redirect: "/dashboard/default" },
+    "/dashboard": { redirect: "/dashboard/default" },
+  },
 });
