@@ -1,5 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: "dashboard",
+});
+</script>
+
 <template>
-  <div>
-    <Button>Click me</Button>
-  </div>
+  <div>Default Dashboard</div>
 </template>

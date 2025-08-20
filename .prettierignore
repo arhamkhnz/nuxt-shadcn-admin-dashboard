@@ -1,0 +1,10 @@
+node_modules
+.nuxt
+.prettierrc
+components.json
+nuxt.config.ts
+package-lock.json
+package.json
+README.md
+tsconfig.json
+app/components/ui
