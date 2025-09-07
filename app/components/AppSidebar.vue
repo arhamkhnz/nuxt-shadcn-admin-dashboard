@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { appInfo } = useAppConfig();
 import type { SidebarProps } from "@/components/ui/sidebar";
 
 import {
@@ -158,7 +159,16 @@ const data = {
 <template>
   <Sidebar v-bind="props">
     <SidebarHeader>
-      <TeamSwitcher :teams="data.teams" />
+      <SidebarMenu>
+        <SidebarMenuItem>
+          <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
+            <a href="#">
+              <Command />
+              <span className="text-base font-semibold">{{ appInfo.name }}</span>
+            </a>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
+      </SidebarMenu>
     </SidebarHeader>
     <SidebarContent>
       <NavMain :items="data.navMain" />
